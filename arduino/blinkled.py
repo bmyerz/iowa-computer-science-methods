@@ -11,10 +11,15 @@ board.output([2])
 # set pin 2 to high
 board.setHigh(2)
 
-# wait one second so that we can see the LED light up
-time.sleep(1)
+# wait 3 seconds so that we can see the LED light up
+time.sleep(3)
 
 # set pin 2 to low
+board.setLow(2)
+
+# do it again
+board.setHigh(2)
+time.sleep(3)
 board.setLow(2)
 
 # release control of the board (end of the program)
