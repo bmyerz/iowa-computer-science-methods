@@ -1,4 +1,4 @@
-s = makeSound("C:\\Users\\bdmyers\\Documents\\GitHub\\iowa-computer-science-methods\\jes-code\houstonproblem.wav")
+s = makeSound("houstonproblem.wav")
 
 backwards = duplicateSound(s)
 for i in range(getLength(s)):
