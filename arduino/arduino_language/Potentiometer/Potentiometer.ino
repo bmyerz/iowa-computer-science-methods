@@ -28,3 +28,6 @@ void loop() {
     // delay half a second
     delay(500);
 }
+
+// This tutorial dervied from
+// https://www.arduino.cc/en/Tutorial/AnalogInput
