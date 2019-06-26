@@ -25,6 +25,7 @@ int t = 0;
 
 // print the state (True or False) of the button
 // once per second
+// Unlike Button.py, this runs forever rather than a fixed number of times
 void loop() {
     // this is how we read digital pin 2
     // the value is True if the pin is receiving high voltage
