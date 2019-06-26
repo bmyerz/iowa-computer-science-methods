@@ -24,7 +24,9 @@ while t < 10:
     # argument (t) and {1} is a placeholder for the second argument (value)
     print("At time {0} values is {1}".format(t, value))
     
+    # wait for 1 second
     time.sleep(1)
+    
     t = t + 1
 
 b.close()
