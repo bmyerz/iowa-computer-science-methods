@@ -1,6 +1,5 @@
 const int trig = 9;
 const int echo = 10;
-const float speedOfSoundMetersPerSec = 343;
 
 float timeOfFlightMicroseconds() {
   // just make sure trig starts low
@@ -28,14 +27,11 @@ void setup() {
 }
 
 void loop() {
+  // we use "us" to denote microseconds (10^-6 seconds per microsecond)
   float duration_us = timeOfFlightMicroseconds();
   float duration_s = duration_us / 1000000;
-  float totalTravelDistanceMeters = duration_s * speedOfSoundMetersPerSec;
-  float distance = totalTravelDistanceMeters/2;
 
-  Serial.print("Half time (us): ");
-  Serial.print(duration_us/2);
-  Serial.print(" Distance (m): ");
-  Serial.println(distance);
+  Serial.print("Total round trip time (us): ");
+  Serial.print(duration_us);
   delay(100);
 }
