@@ -30,7 +30,7 @@ void loop() {
   // we use "us" to denote microseconds (10^-6 seconds per microsecond)
   float duration_us = echoTimeInMicroseconds();
   // we use "s" to denote seconds
-  float duration_s = duration_us / pow(10, -6);
+  float duration_s = duration_us * pow(10, -6);
 
   Serial.print("Total round trip time: ");
   Serial.print(duration_us);
