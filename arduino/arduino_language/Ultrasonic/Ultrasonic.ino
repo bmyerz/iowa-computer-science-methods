@@ -1,6 +1,13 @@
 const int trig = 9;
 const int echo = 10;
 
+// When this function is called, the
+// Arduino asks the ultrasonic sensor to
+// take a measurement of echo time. The
+// function returns a float (decimal number)
+// that represents the  echo time in microseconds.
+// This time is the *total* round-trip time for
+// the chirp to travel to the object and back.
 float echoTimeInMicroseconds() {
   // just make sure trig starts low
   digitalWrite(trig, LOW);
