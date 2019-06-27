@@ -1,7 +1,7 @@
 const int trig = 9;
 const int echo = 10;
 
-float timeOfFlightMicroseconds() {
+float ultrasonicMicroseconds() {
   // just make sure trig starts low
   digitalWrite(trig, LOW);
   delayMicroseconds(2);
@@ -28,7 +28,7 @@ void setup() {
 
 void loop() {
   // we use "us" to denote microseconds (10^-6 seconds per microsecond)
-  float duration_us = timeOfFlightMicroseconds();
+  float duration_us = ultrasonicMicroseconds();
   float duration_s = duration_us / 1000000;
 
   Serial.print("Total round trip time (us): ");
