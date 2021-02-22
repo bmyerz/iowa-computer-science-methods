@@ -46,5 +46,6 @@ void loop() {
   Serial.print(" us OR ");
   Serial.print(duration_s);
   Serial.println(" s");
+  // wait 100 ms until taking another reading
   delay(100);
 }
